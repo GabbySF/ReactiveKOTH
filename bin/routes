@@ -1,0 +1,10 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+POST	/start_war/					controllers.Application.start_war
+POST	/deploy/					controllers.Application.deploy
+POST	/get_event_details/					controllers.Application.get_event_details
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
